@@ -1,11 +1,13 @@
-The SP140-RESIST pathway
-Scripts and files used in:
+# The SP140-RESIST pathway
+
+### Scripts and files used in:
+
 Kristen Witt, Adam Dziulko, Joohyun An, Ophelia Vosshall Lee, Grace Liu, Azra Lari, Roberto Chavez, David Turner, Arthur Cheng, Dmitri Kotov, Preethy Abraham, Angus Y. Lee, Harmandeep Dhaliwal, Eugene Valkov, Laurent Coscoy, Britt Glausinger, Edward B. Chuong, Russell E. Vance (2024) "The SP140-RESIST pathway regulates interferon mRNA stability and antiviral immunity".
 
-GEO:
+### GEO:
 Accession code 
 
-Programs used:
+### Programs used:
 GIGGLE v0.6.3 (https://github.com/ryanlayer/giggle)
 bedtools v2.28.0 (http://bedtools.readthedocs.io/en/latest/)
 deepTools v3.0.1 (https://deeptools.readthedocs.io/en/develop/index.html)
