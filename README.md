@@ -18,7 +18,6 @@ Accession codes:
 - samtools v1.10 (http://www.htslib.org/)
 - BBDuk/BBMap v38.05 (https://jgi.doe.gov/data-and-tools/bbtools/)
 - hisat2 v2.1.0 (https://github.com/DaehwanKimLab/hisat2)
-- subread/featureCounts v1.6.2 (http://subread.sourceforge.net/)
 - MACS2 v2.1.1 (https://pypi.org/project/MACS2/)
 - BWA v0.7.15 (https://github.com/lh3/bwa)
 - DESeq2 v1.32.0 (https://bioconductor.org/packages/release/bioc/html/DESeq2.html)
