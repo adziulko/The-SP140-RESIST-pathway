@@ -24,3 +24,9 @@ Accession codes:
 - DESeq2 v1.32.0 (https://bioconductor.org/packages/release/bioc/html/DESeq2.html)
 - fastq-dump v2.10.5 from SRA Toolkit (https://hpc.nih.gov/apps/sratoolkit.html)
 - singularity v3.1.1 (https://github.com/hpcng/singularity)
+
+### Public databases:
+- Cistrome (http://cistrome.org/)
+- GREAT  (http://great.stanford.edu/public/html/)
+- UCSC (https://genome.ucsc.edu/)
+- GENCODE mm10 (https://www.gencodegenes.org/mouse/releases.html)
