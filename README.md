@@ -5,7 +5,11 @@
 Kristen Witt, Adam Dziulko, Joohyun An, Ophelia Vosshall Lee, Grace Liu, Azra Lari, Roberto Chavez, David Turner, Arthur Cheng, Dmitri Kotov, Preethy Abraham, Angus Y. Lee, Harmandeep Dhaliwal, Eugene Valkov, Laurent Coscoy, Britt Glausinger, Edward B. Chuong, Russell E. Vance (2024) "The SP140-RESIST pathway regulates interferon mRNA stability and antiviral immunity".
 
 ### GEO:
-Accession code 
+Accession codes:
+- RNA-seq for Ifnar–/– and Sp140–/–Ifnar–/– Bone Marrow-Derived Macrophages (BMMs) is available at GEO accession GSE269761
+- RNA-seq for B6 and Sp140–/– BMMs is available at GEO accession GSE269808
+- ATAC-Seq for B6 and Sp140–/– BMMs is available at GEO accession GSE269811
+- CUT&RUN for HA-SP140 anti-HA is available at GEO accession GSE269315
 
 ### Programs used:
 - GIGGLE v0.6.3 (https://github.com/ryanlayer/giggle)
