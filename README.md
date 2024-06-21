@@ -16,6 +16,7 @@ Accession codes:
 - deepTools v3.0.1 (https://deeptools.readthedocs.io/en/develop/index.html)
 - samtools v1.16.1 (http://www.htslib.org/)
 - BBDuk/BBMap v38.05 (https://jgi.doe.gov/data-and-tools/bbtools/)
+- salmon v0.13.1 (https://gensoft.pasteur.fr/docs/salmon/1.1.0/salmon.html)
 - hisat2 v2.1.0 (https://github.com/DaehwanKimLab/hisat2)
 - MACS2 v2.1.1 (https://pypi.org/project/MACS2/)
 - BWA v0.7.15 (https://github.com/lh3/bwa)
