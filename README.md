@@ -35,7 +35,7 @@ Started with RNAseq fastq files for two datasets (from WT (B6) or KO BMMs from m
 2) Ifnar KO BMMs untreated x3, Ifnar KO BMMs treated with DMXAA x3, Sp140 & Ifnar KO BMMS untreated x3, Sp140 & Ifnar KO BMMs treated with DMXAA x3 (DMXAA treatment at 10 ug/mL for 4 hours)
 
 **RNAseq Workflow:**
-1) [bbduk_PE.sbatch](RNA-seq/a1_bbduk_array_PE.sbatch)
+1) [a1_bbduk_array_PE.sbatch](RNA-seq/a1_bbduk_array_PE.sbatch)
 2) [hisat2_PE.sbatch](RNA-seq/b1_salmon_PE.sbatch)
 3) [bam_to_bw.sbatch](RNA-seq/c1_hisat2_PE_RNA_TEtran_q10SB_unstrand_mm10.sbatch)
 4) [feature_counts.sbatch](RNA-seq/d1_deeptools_bam_to_bigwig_mm10_unstranded.sbatch)
