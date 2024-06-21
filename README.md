@@ -15,13 +15,12 @@ Accession codes:
 - GIGGLE v0.6.3 (https://github.com/ryanlayer/giggle)
 - bedtools v2.28.0 (http://bedtools.readthedocs.io/en/latest/)
 - deepTools v3.0.1 (https://deeptools.readthedocs.io/en/develop/index.html)
-- samtools v1.10 (http://www.htslib.org/)
+- samtools v1.16.1 (http://www.htslib.org/)
 - BBDuk/BBMap v38.05 (https://jgi.doe.gov/data-and-tools/bbtools/)
 - hisat2 v2.1.0 (https://github.com/DaehwanKimLab/hisat2)
 - MACS2 v2.1.1 (https://pypi.org/project/MACS2/)
 - BWA v0.7.15 (https://github.com/lh3/bwa)
-- DESeq2 v1.32.0 (https://bioconductor.org/packages/release/bioc/html/DESeq2.html)
-- fastq-dump v2.10.5 from SRA Toolkit (https://hpc.nih.gov/apps/sratoolkit.html)
+- DESeq2 v1.38.3 (https://bioconductor.org/packages/release/bioc/html/DESeq2.html)
 - singularity v3.1.1 (https://github.com/hpcng/singularity)
 
 ### Public databases:
