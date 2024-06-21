@@ -12,7 +12,6 @@ Accession codes:
 - CUT&RUN for HA-SP140 anti-HA is available at GEO accession GSE269315
 
 ### Programs used:
-- GIGGLE v0.6.3 (https://github.com/ryanlayer/giggle)
 - bedtools v2.28.0 (http://bedtools.readthedocs.io/en/latest/)
 - deepTools v3.0.1 (https://deeptools.readthedocs.io/en/develop/index.html)
 - samtools v1.16.1 (http://www.htslib.org/)
