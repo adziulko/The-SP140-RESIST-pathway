@@ -28,3 +28,15 @@ Accession codes:
 - GREAT  (http://great.stanford.edu/public/html/)
 - UCSC (https://genome.ucsc.edu/)
 - GENCODE mm10 (https://www.gencodegenes.org/mouse/releases.html)
+
+## Differential expressed genes of SP140 KO BMMs & SP140/IFNAR KO vs IFNAR KO
+Started with RNAseq fastq files for two datasets (from WT (B6) or KO BMMs from mice):
+1) WT BMMs untreated x3, WT BMMs treated with DMXAA x3, Sp140 KO BMMS untreated x3, Sp140 KO BMMs treated with DMXAA x3 (DMXAA treatment at 100 ug/mL for 8 hours)
+2) Ifnar KO BMMs untreated x3, Ifnar KO BMMs treated with DMXAA x3, Sp140 & Ifnar KO BMMS untreated x3, Sp140 & Ifnar KO BMMs treated with DMXAA x3 (DMXAA treatment at 10 ug/mL for 4 hours)
+**RNAseq Workflow:**
+1) [bbduk_PE.sbatch](rnaseq/a1_bbduk_array_PE.sbatch)
+2) [hisat2_PE.sbatch](rnaseq/b1_salmon_PE.sbatch)
+3) [bam_to_bw.sbatch](rnaseq/c1_hisat2_PE_RNA_TEtran_q10SB_unstrand_mm10.sbatch)
+4) [feature_counts.sbatch](rnaseq/d1_deeptools_bam_to_bigwig_mm10_unstranded.sbatch)
+5) [deseq2_genes.R](R-code/tximport_DESeq2_kristen_cleanedup.R)
+
