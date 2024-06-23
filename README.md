@@ -34,7 +34,7 @@ Started with RNAseq fastq files for two datasets (from WT (B6) or KO BMMs from m
 1) WT BMMs untreated x3, WT BMMs treated with DMXAA x3, Sp140 KO BMMS untreated x3, Sp140 KO BMMs treated with DMXAA x3 (DMXAA treatment at 100 ug/mL for 8 hours)
 2) Ifnar KO BMMs untreated x3, Ifnar KO BMMs treated with DMXAA x3, Sp140 & Ifnar KO BMMS untreated x3, Sp140 & Ifnar KO BMMs treated with DMXAA x3 (DMXAA treatment at 10 ug/mL for 4 hours)
 
-**RNAseq Workflow:**
+**RNAseq Workflow (for dataset #1):**
 1) Trim adapters on raw fastq files using BBDuk
     - [a1_bbduk_array_PE.sbatch](RNA-seq/a1_bbduk_array_PE.sbatch)
 2) Take trimmed fastq files and run through Salmon to quantify the expression of transcripts
@@ -46,3 +46,5 @@ Started with RNAseq fastq files for two datasets (from WT (B6) or KO BMMs from m
 5) Take BAM files from HISAT2 output and convert to bigwig file (compresses the file/map and makes a more readable format to look at genome map on UCSC genome browser)
    - [d1_deeptools_bam_to_bigwig_mm10_unstranded.sbatch](RNA-seq/d1_deeptools_bam_to_bigwig_mm10_unstranded.sbatch)
 
+**RNAseq Workflow (for dataset #2):**
+- Same as above, but use [a2] (RNA-seq/a1_bbduk_array_PE.sbatch), b2, c2, d2 code
