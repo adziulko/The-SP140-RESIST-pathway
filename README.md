@@ -47,4 +47,4 @@ Started with RNAseq fastq files for two datasets (from WT (B6) or KO BMMs from m
    - [d1_deeptools_bam_to_bigwig_mm10_unstranded.sbatch](RNA-seq/d1_deeptools_bam_to_bigwig_mm10_unstranded.sbatch)
 
 **RNAseq Workflow (for dataset #2):**
-- Same as above, but use [a2] (RNA-seq/a1_bbduk_array_PE.sbatch), b2, c2, d2 code
+- Same as above, but use [a2_bbduk_ifnar_array_PE.sbatch](RNA-seq/a2_bbduk_ifnar_array_PE.sbatch), [b2_salmon_ifnar_PE.sbatch](RNA-seq/b2_salmon_ifnar_PE.sbatch), [c2_hisat2_ifnar_PE_RNA_TEtran_q10SB_unstrand_mm10.sbatch](RNA-seq/c2_hisat2_ifnar_PE_RNA_TEtran_q10SB_unstrand_mm10.sbatch), [d2_deeptools_ifnar_bam_to_bigwig_mm10_unstranded.sbatch](RNA-seq/d2_deeptools_ifnar_bam_to_bigwig_mm10_unstranded.sbatch) code
