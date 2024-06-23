@@ -36,8 +36,9 @@ Started with RNAseq fastq files for two datasets (from WT (B6) or KO BMMs from m
 
 **RNAseq Workflow:**
 1) [a1_bbduk_array_PE.sbatch](RNA-seq/a1_bbduk_array_PE.sbatch)
-2) [hisat2_PE.sbatch](RNA-seq/b1_salmon_PE.sbatch)
-3) [bam_to_bw.sbatch](RNA-seq/c1_hisat2_PE_RNA_TEtran_q10SB_unstrand_mm10.sbatch)
-4) [feature_counts.sbatch](RNA-seq/d1_deeptools_bam_to_bigwig_mm10_unstranded.sbatch)
-5) [deseq2_genes.R](R-code/tximport_DESeq2_kristen_cleanedup.R)
+  - sdfdsf
+3) [b1_salmon_PE.sbatch](RNA-seq/b1_salmon_PE.sbatch)
+4) [c1_hisat2_PE_RNA_TEtran_q10SB_unstrand_mm10.sbatch](RNA-seq/c1_hisat2_PE_RNA_TEtran_q10SB_unstrand_mm10.sbatch)
+5) [d1_deeptools_bam_to_bigwig_mm10_unstranded.sbatch](RNA-seq/d1_deeptools_bam_to_bigwig_mm10_unstranded.sbatch)
+6) [tximport_DESeq2_kristen_cleanedup.R](R-code/tximport_DESeq2_kristen_cleanedup.R)
 
