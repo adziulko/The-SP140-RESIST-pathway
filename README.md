@@ -48,3 +48,21 @@ Started with RNAseq fastq files for two datasets (from WT (B6) or KO BMMs from m
 
 **RNAseq Workflow (for dataset #2):**
 - Same as above, but use [a2_bbduk_ifnar_array_PE.sbatch](RNA-seq/a2_bbduk_ifnar_array_PE.sbatch), [b2_salmon_ifnar_PE.sbatch](RNA-seq/b2_salmon_ifnar_PE.sbatch), [c2_hisat2_ifnar_PE_RNA_TEtran_q10SB_unstrand_mm10.sbatch](RNA-seq/c2_hisat2_ifnar_PE_RNA_TEtran_q10SB_unstrand_mm10.sbatch), [d2_deeptools_ifnar_bam_to_bigwig_mm10_unstranded.sbatch](RNA-seq/d2_deeptools_ifnar_bam_to_bigwig_mm10_unstranded.sbatch) code
+
+## SP140 chromatin binding
+Started with CUT&RUN fastq files for anti-HA or IgG (from Sp140 KO BMMs all treated wtih DMXAA from mice):
+1) Sp140 KO BMMs transduced with HA-SP140 x3, Sp140 KO BMMs transduced with non tagged SP140 x3, Sp140 KO BMMs IgG control (DMXAA treatment at 100 ug/mL for 8 hours)
+
+**CUT&RUN Workflow:**
+1) Trim adapters on raw fastq files using BBDuk
+    - [a_bbduk_array_PE.sbatch](CUT&RUN/a_bbduk_array_PE.sbatch)
+2) Take trimmed fastq files and run through BWA-MEM to map reads to mm10 genome 
+    - [b_bwaMem_PE_mm10.sbatch](CUT&RUN/b_bwaMem_PE_mm10.sbatch)
+3) Take BAM files from BWA-MEM output and convert to broadpeak files using MAC2 
+   - [c1_macs2_multi_cNnbN_control_broadP_mm10.sbatch](CUT&RUN/c1_macs2_multi_cNnbN_control_broadP_mm10.sbatch)
+4) Same as above, but this time without IgG control (to compare and see if there are any major differences of code; not much difference observed)
+   - [c2_macs2_multi_cNnbN_NOcontrol_broadP_mm10.sbatch](CUT&RUN/c2_macs2_multi_cNnbN_NOcontrol_broadP_mm10.sbatch)
+5) Take bedgraph (bdg) files from MACS2 output and convert to bigwig file (compresses the file/map and makes a more readable format to look at genome map on UCSC genome browser)
+   - [d_bdg_to_bigwig.sbatch](CUT&RUN/d_bdg_to_bigwig.sbatch)
+
+
