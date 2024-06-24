@@ -58,11 +58,31 @@ Started with CUT&RUN fastq files for anti-HA or IgG (from Sp140 KO BMMs all trea
     - [a_bbduk_array_PE.sbatch](CUT&RUN/a_bbduk_array_PE.sbatch)
 2) Take trimmed fastq files and run through BWA-MEM to map reads to mm10 genome 
     - [b_bwaMem_PE_mm10.sbatch](CUT&RUN/b_bwaMem_PE_mm10.sbatch)
-3) Take BAM files from BWA-MEM output and convert to broadpeak files using MAC2 
+3) Take BAM files from BWA-MEM output and convert to broadpeak & bedgraph files using MAC2 
    - [c1_macs2_multi_cNnbN_control_broadP_mm10.sbatch](CUT&RUN/c1_macs2_multi_cNnbN_control_broadP_mm10.sbatch)
 4) Same as above, but this time without IgG control (to compare and see if there are any major differences of code; not much difference observed)
    - [c2_macs2_multi_cNnbN_NOcontrol_broadP_mm10.sbatch](CUT&RUN/c2_macs2_multi_cNnbN_NOcontrol_broadP_mm10.sbatch)
 5) Take bedgraph (bdg) files from MACS2 output and convert to bigwig file (compresses the file/map and makes a more readable format to look at genome map on UCSC genome browser)
    - [d_bdg_to_bigwig.sbatch](CUT&RUN/d_bdg_to_bigwig.sbatch)
+
+## Accessible chromatin upon Sp140 KO
+Started with ATACseq fastq files (from WT (B6) or KO BMMs from mice):
+1) WT BMMs untreated x3, WT BMMs treated with DMXAA x3, Sp140 KO BMMS untreated x3, Sp140 KO BMMs treated with DMXAA x3 (DMXAA treatment at 100 ug/mL for 8 hours)
+
+**ATACseq Workflow:**
+1) Trim adapters on raw fastq files using BBDuk
+    - [a_bbduk_array_PE.sbatch](ATAC-seq/a_bbduk_array_PE.sbatch)
+2) Take trimmed fastq files and run through BWA-MEM to map reads to mm10 genome 
+    - [b_bwaMem_PE_ATAC_mm10.sbatch](ATAC-seq/b_bwaMem_PE_ATAC_mm10.sbatch)
+3) Take BAM files from BWA-MEM output and convert to broadpeak & bedgraph files using MAC2 
+   - [c_macs2_atac_NOcontrol_mm10.sbatch](ATAC-seq/c_macs2_atac_NOcontrol_mm10.sbatch)
+4) Take BAM files from BWA-MEM output to quantify peaks using bedtools 
+   - [e_bamCountTable_all_mm10_ATAC.sbatch](ATAC-seq/e_bamCountTable_all_mm10_ATAC.sbatch)
+5) Input bedtools quantification files into R, then run DeSeq2 for differential peak expression 
+   - [DESeq2_ATACseq_kristen_cleanedup.R](R-code/DESeq2_ATACseq_kristen_cleanedup.R)   
+6) Take bedgraph (bdg) files from MACS2 output and convert to bigwig file (compresses the file/map and makes a more readable format to look at genome map on UCSC genome browser)
+   - [d_bdg_to_bigwig_atac.sbatch](ATAC-seq/d_bdg_to_bigwig_atac.sbatch)
+  
+
 
 
