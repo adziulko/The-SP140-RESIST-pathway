@@ -2,7 +2,7 @@
 
 ### Scripts and files used in:
 
-Kristen Witt, Adam Dziulko, Joohyun An, Ophelia Vosshall Lee, Grace Liu, Azra Lari, Roberto Chavez, David Turner, Arthur Cheng, Dmitri Kotov, Preethy Abraham, Angus Y. Lee, Harmandeep Dhaliwal, Eugene Valkov, Laurent Coscoy, Britt Glausinger, Edward B. Chuong, Russell E. Vance (2024) "The SP140-RESIST pathway regulates interferon mRNA stability and antiviral immunity".
+Kristen C. Witt, Adam Dziulko, Joohyun An, Filip Pekovic, Arthur Cheng, Grace Liu, Ophelia Vosshall Lee, David J. Turner, Azra Lari, Moritz M. Gaidt, Roberto Chavez,  Stefan A. Fattinger, Preethy Abraham, Harmandeep Dhaliwal, Angus Y. Lee, Dmitri I. Kotov, Laurent Coscoy, Britt Glaunsinger, Eugene Valkov, Edward B. Chuong, Russell E. Vance (2024) "The SP140-RESIST pathway regulates interferon mRNA stability and antiviral immunity".
 
 ### GEO:
 Accession codes:
